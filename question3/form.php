@@ -10,11 +10,11 @@
     $to_email = $email;
     $subject = "Registration Confirmation";
     $body = "Hi, this mail is sent for test purpose only";
-    $headers = "From: pujantalukder98@gmail.com";
+    $headers = "From: youremail.com";
 
 
     // sending email
-    //mail($to_email,$subject, $body, $headers);
+    mail($to_email,$subject, $body, $headers);
 
     if(isset($_POST["submit"])){
         echo '<script type="text/javascript"> window.open("submission.php","_self");</script>';
